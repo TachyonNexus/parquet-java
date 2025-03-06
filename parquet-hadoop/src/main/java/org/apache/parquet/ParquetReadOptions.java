@@ -236,6 +236,29 @@ public class ParquetReadOptions {
     return propValue.map(Boolean::parseBoolean).orElse(defaultValue);
   }
 
+  @Override
+  public ParquetReadOptions clone() {
+    return new ParquetReadOptions(
+        useSignedStringMinMax,
+        useStatsFilter,
+        useDictionaryFilter,
+        useRecordFilter,
+        useColumnIndexFilter,
+        usePageChecksumVerification,
+        useBloomFilter,
+        useOffHeapDecryptBuffer,
+        useHadoopVectoredIo,
+        recordFilter,
+        metadataFilter,
+        HadoopCodecs.newFactory(conf, 0),
+        new HeapByteBufferAllocator(),
+        maxAllocationSize,
+        properties,
+        fileDecryptionProperties,
+        metricsCallback,
+        conf);
+  }
+
   public ParquetConfiguration getConfiguration() {
     return conf;
   }
