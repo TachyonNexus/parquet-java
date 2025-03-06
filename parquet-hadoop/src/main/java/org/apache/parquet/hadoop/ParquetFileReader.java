@@ -724,7 +724,9 @@ public class ParquetFileReader implements Closeable {
     return new ParquetFileReader(file, options, f);
   }
 
-  public static ParquetFileReader open(InputFile file, ParquetMetadata footer, ParquetReadOptions options, SeekableInputStream f) throws IOException {
+  public static ParquetFileReader open(
+      InputFile file, ParquetMetadata footer, ParquetReadOptions options, SeekableInputStream f)
+      throws IOException {
     return new ParquetFileReader(file, footer, options, f);
   }
 
@@ -925,7 +927,8 @@ public class ParquetFileReader implements Closeable {
     }
   }
 
-  public ParquetFileReader(InputFile file, ParquetMetadata footer, ParquetReadOptions options, SeekableInputStream f) throws IOException {
+  public ParquetFileReader(InputFile file, ParquetMetadata footer, ParquetReadOptions options, SeekableInputStream f)
+      throws IOException {
     this.converter = new ParquetMetadataConverter(options);
     this.file = file;
     this.f = f;
