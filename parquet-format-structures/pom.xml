@@ -24,7 +24,7 @@
     <groupId>org.apache.parquet</groupId>
     <artifactId>parquet</artifactId>
     <relativePath>../pom.xml</relativePath>
-    <version>1.15-Alluxio</version>
+    <version>1.15.1-Alluxio</version>
   </parent>
 
   <artifactId>parquet-format-structures</artifactId>
