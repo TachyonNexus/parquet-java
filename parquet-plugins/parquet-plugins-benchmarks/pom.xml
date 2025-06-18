@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.apache.parquet</groupId>
     <artifactId>parquet</artifactId>
-    <version>1.15.1-Alluxio</version>
+    <version>1.15.2-Alluxio</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
