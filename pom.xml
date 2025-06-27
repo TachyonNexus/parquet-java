@@ -9,7 +9,7 @@
 
   <groupId>org.apache.parquet</groupId>
   <artifactId>parquet</artifactId>
-  <version>1.15.1-Alluxio</version>
+  <version>1.15.2-Alluxio</version>
   <packaging>pom</packaging>
 
   <name>Apache Parquet Java</name>
